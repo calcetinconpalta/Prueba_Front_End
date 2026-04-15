@@ -1,0 +1,19 @@
+hola
+
+Bibliografía 
+https://www.tiendanimal.es/articulos/el-huron-como-mascota/ info 
+https://xavivallsvet.com/es/noticias___es/huron-animal-picaro-jugueton/ info 
+https://animalia.bio/es/domesticated-ferret info 
+https://coolors.co/e8d7ff-ffd3e8-ffd7d5-f3ffe1-dfffd6 pagina para sacar las paletas que al final no me gustaron. pero lo dejo acá por el registro 
+https://www.w3schools.com/css/css_background.asp fondos con opacidades 
+https://www.w3schools.com/css/css_border.asp tipos de bordeados para los cuadros 
+https://www.w3schools.com/css/css_text.asp textos 
+https://www.w3schools.com/css/css_display.asp elementos en nivel 
+https://www.w3schools.com/css/css_font_google.asp fuentes de google
+https://www.w3schools.com/css/css3_images.asp tamaño y formas de imagenes 
+https://www.w3schools.com/css/css3_borders.asp esquinas redondeadas 
+https://www.w3schools.com/css/css3_border_images.asp esquinas redondeadas para las imagenes 
+https://www.w3schools.com/tags/tag_strong.asp poner texto en negritas 
+https://www.w3schools.com/CSSref/func_rem.php poner las unidades en rem en vez de px es mejor porque se adapta al tamaño por defecto del sistema o de cada navegador y lo multiplica x valor rem * la raíz del tamaño = tamaño de letra en pantalla 
+ia a la que le pedi ayuda fue a claude con la paleta de colores: 
+prompt: ya tengo un css para la pagina pero no me gusta como está necesito que me busques una paleta de colores que combine con la tematica de hurones con colores pastel suave, nada saturado para la vista,
