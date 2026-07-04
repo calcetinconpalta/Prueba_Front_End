@@ -1,0 +1,260 @@
+:root {
+  --color-primario: #2f6fed;
+  --color-primario-oscuro: #1e4fb8;
+  --color-peligro: #e5484d;
+  --color-fondo: #f4f6fb;
+  --color-tarjeta: #ffffff;
+  --color-texto: #1c1f26;
+  --color-texto-suave: #666f7d;
+  --color-borde: #e1e5ec;
+  --radio: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.contenedor-app {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.encabezado-app h1 {
+  margin-bottom: 4px;
+}
+
+.encabezado-app p {
+  color: var(--color-texto-suave);
+  margin-top: 0;
+}
+
+.cuerpo-app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tarjeta {
+  background: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-texto-suave);
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-primario);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: var(--color-primario-oscuro);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.boton-peligro {
+  background: var(--color-peligro);
+}
+
+.boton-peligro:hover:not(:disabled) {
+  background: #c9302c;
+}
+
+.boton-eliminar-pequeno {
+  background: transparent;
+  color: var(--color-peligro);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border: 1px solid var(--color-peligro);
+}
+
+.boton-eliminar-pequeno:hover {
+  background: var(--color-peligro);
+  color: white;
+}
+
+.error-texto {
+  color: var(--color-peligro);
+  font-size: 0.82rem;
+}
+
+.banner-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdecea;
+  border: 1px solid var(--color-peligro);
+  color: #7a1f22;
+  padding: 12px 16px;
+  border-radius: var(--radio);
+  margin-bottom: 16px;
+}
+
+.cabecera-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.cabecera-lista input {
+  min-width: 220px;
+}
+
+.lista-contactos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta-contacto {
+  padding: 16px;
+}
+
+.cabecera-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cabecera-contacto h3 {
+  margin: 0 0 4px;
+}
+
+.contador-datos {
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+.acciones-contacto {
+  display: flex;
+  gap: 8px;
+}
+
+.detalle-expandido {
+  margin-top: 16px;
+  border-top: 1px solid var(--color-borde);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lista-datos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-dato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--color-fondo);
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex-wrap: wrap;
+}
+
+.etiqueta-tipo {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.detalle-dato {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  flex: 1;
+}
+
+.formulario-dato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: var(--color-fondo);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.formulario-dato button {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.texto-vacio {
+  color: var(--color-texto-suave);
+  text-align: center;
+  padding: 16px 0;
+}
+
+@media (max-width: 560px) {
+  .formulario-dato {
+    grid-template-columns: 1fr;
+  }
+  .cabecera-contacto {
+    flex-direction: column;
+  }
+}
